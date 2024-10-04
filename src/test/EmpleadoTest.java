@@ -93,8 +93,34 @@ class EmpleadoTest {
 	}
 
 	@Test
-	void testCalculoNominaNeta() {
-		fail("Not yet implemented");
+	void testCalculoNominaNetainferior2100() {
+		
+		float expected = 2000;
+		float actual = empleado1.calculoNominaNeta(2000);
+		
+		assertEquals(expected,actual);
+		
+		
+	}
+	@Test
+	void testCalculoNominaNetasuperior2100() {
+		
+		float expected = 1785;
+		float actual = empleado1.calculoNominaNeta(2100);
+		
+		assertEquals(expected,actual);
+		
+		
+	}
+	@Test
+	void testCalculoNominaNetasuperior2500() {
+		
+		float expected = 2050;
+		float actual = empleado1.calculoNominaNeta(2500);
+		
+		assertEquals(expected,actual);
+		
+		
 	}
 
 }
