@@ -22,7 +22,7 @@ public class Empleado {
 		if(ventasMes >= 1500)
 		{
 			primas = 200;
-		}else if(ventasMes >= 100)
+		}else if(ventasMes >= 1000)
 		{
 			primas = 100;
 		}
